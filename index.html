@@ -33,5 +33,13 @@
   <p>Content on this website is free to use. Original document can be found and copied in this<a href="https://docs.google.com/document/d/13d7QbU5FJr4WzR7RV-nqDV4I19T65_4PzaRSY3oFm7g/edit?usp=sharing" target="_blank" rel="noopener"> Google Doc</a>.</p>
   <p>References are available in this <a href="https://docs.google.com/document/d/1eEfBZwBBdl-X5i0F5UP94oj_At6Xk-w4tLfK18uLz5I/edit?usp=sharing" target="_blank" rel="noopener">Google Doc</a>.</p>
 </footer>
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('a[href^="http"]').forEach(function(link) {
+    link.setAttribute('target', '_blank');
+    link.setAttribute('rel', 'noopener noreferrer');
+  });
+});
+</script>
 </body>
 </html>
