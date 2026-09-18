@@ -1,10 +1,12 @@
 :root {
-  --ink: #2b2320;
-  --paper: #fdfaf6;
-  --accent: #8a2b3d;
-  --accent-light: #f2e2e4;
-  --muted: #6b625c;
-  --border: #e5ddd3;
+  /* RRCC brand palette */
+  --ink: #141A38;            /* Foothill Night â€” body text, headings */
+  --paper: #FFFFFF;          /* neutral background */
+  --accent: #E31E38;         /* Fountain Red â€” links & small accents only */
+  --accent-light: #99C9DE;   /* Bluebird Sky â€” light accent, callout backgrounds */
+  --rule: #FFC44F;           /* Prairie Gold â€” thin rules & underlines */
+  --muted: rgba(20,26,56,0.65);
+  --border: rgba(20,26,56,0.15);
   --maxw: 900px;
 }
 
