@@ -1,10 +1,11 @@
 :root {
-  /* RRCC brand palette */
-  --ink: #141A38;            /* Foothill Night â€” body text, headings */
+  /* Brand palette */
+  --ink: #141A38;            /* deep navy — header banner, headings, body text */
   --paper: #FFFFFF;          /* neutral background */
-  --accent: #141A38;         /* Foothill Night links & small accents only */
-  --accent-light: #99C9DE;   /* Bluebird Sky â€” light accent, callout backgrounds */
-  --rule: #FFC44F;           /* Prairie Gold â€” thin rules & underlines */
+  --link: #E31E38;           /* red — links */
+  --link-hover: #520F1C;     /* deep maroon — link hover/active state */
+  --gold: #FFC44F;           /* gold — thin rules & underlines */
+  --coral: #FF8559;          /* coral — callout accents */
   --muted: rgba(20,26,56,0.65);
   --border: rgba(20,26,56,0.15);
   --maxw: 900px;
@@ -21,10 +22,11 @@ body {
 }
 
 .site-header {
-  background: var(--accent);
+  background: var(--ink);
   color: #fff;
   padding: 3rem 1.5rem 2.5rem;
   text-align: center;
+  border-bottom: 4px solid var(--gold);
 }
 
 .site-header h1 {
@@ -66,7 +68,7 @@ body {
 .toc strong {
   display: block;
   margin-bottom: 0.5rem;
-  color: var(--accent);
+  color: var(--ink);
   text-transform: uppercase;
   letter-spacing: 0.05em;
   font-size: 0.75rem;
@@ -100,7 +102,7 @@ body {
 }
 
 .toc a:hover {
-  color: var(--accent);
+  color: var(--link);
 }
 
 .content {
@@ -114,8 +116,8 @@ body {
 }
 
 .content h1 {
-  color: var(--accent);
-  border-bottom: 2px solid var(--accent-light);
+  color: var(--ink);
+  border-bottom: 2px solid var(--gold);
   padding-bottom: 0.4rem;
   margin-top: 2.5rem;
 }
@@ -125,7 +127,7 @@ body {
 }
 
 .content h2 {
-  color: var(--accent);
+  color: var(--ink);
   margin-top: 2rem;
 }
 
@@ -142,7 +144,11 @@ body {
 }
 
 .content a {
-  color: var(--accent);
+  color: var(--link);
+}
+
+.content a:hover {
+  color: var(--link-hover);
 }
 
 .content table {
@@ -157,11 +163,11 @@ body {
 }
 
 .content blockquote {
-  border-left: 3px solid var(--accent);
+  border-left: 3px solid var(--coral);
   margin: 1rem 0;
   padding: 0.25rem 1rem;
   color: var(--muted);
-  background: var(--accent-light);
+  background: rgba(255, 133, 89, 0.12);
 }
 
 .site-footer {
